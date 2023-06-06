@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    
+      <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #map{
+            height: 500px;
+            width: 100%;
+        }
+      </style>
+    <title>ExploreCan</title>
+</head>
+<body>
+    <div id="map">
+        <script>
+            function initMap(){
+                var location = {lat: 43.653225, lng: -79.383186}
+                var map = new google.maps.map(document.getElementById("map"),{
+                    zoom: 4,
+                    center: location
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtoyMymbAaEn007chUXHRLzcVNdoD4TFE&callback=initMap"></script>
+
+    </div>
+</body>
+</html>
